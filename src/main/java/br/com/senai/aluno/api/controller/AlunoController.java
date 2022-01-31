@@ -25,6 +25,10 @@ public class AlunoController {
     public ResponseEntity<AlunoOutputDTO> cadastrar(
             @RequestBody AlunoInputDTO alunoInputDTO
     ) throws Exception {
+        if (!alunoUtils.verificaCadastrar(alunoInputDTO)) {
+            return ResponseEntity.badRequest().build();
+        }
+
         Aluno novoAluno = alunoAssembler.toEntity(alunoInputDTO);
 
         Aluno aluno = alunoUtils.cadastrar(novoAluno);
@@ -57,8 +61,8 @@ public class AlunoController {
             @RequestBody AlunoInputDTO alunoInputDTO,
             @PathVariable long matricula
     ) throws Exception {
-        if (alunoService.buscar(matricula).isEmpty()) {
-            return ResponseEntity.notFound().build();
+        if (!alunoUtils.verificaEditar(alunoInputDTO)) {
+            return ResponseEntity.badRequest().build();
         }
 
         Aluno novoAluno = alunoAssembler.toEntity(alunoInputDTO);

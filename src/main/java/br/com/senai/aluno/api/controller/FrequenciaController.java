@@ -2,8 +2,6 @@ package br.com.senai.aluno.api.controller;
 
 import br.com.senai.aluno.api.model.input.FrequenciaInputDTO;
 import br.com.senai.aluno.api.model.output.FrequenciaOutputDTO;
-import br.com.senai.aluno.domain.entities.Frequencia;
-import br.com.senai.aluno.domain.services.FrequenciaService;
 import br.com.senai.aluno.domain.utils.FrequenciaUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
