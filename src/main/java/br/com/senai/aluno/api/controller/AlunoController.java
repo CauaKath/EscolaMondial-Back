@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/***
+ * Classe responsável pelas rotas relacionadas a
+ * entidade Aluno
+ */
+
 @AllArgsConstructor
 @RestController
 @RequestMapping("/alunos")

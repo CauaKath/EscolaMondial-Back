@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+/***
+ * Classe responsável por realizar o CRUD
+ * relacionado à Frequencia
+ */
+
 @AllArgsConstructor
 @Service
 public class FrequenciaService {

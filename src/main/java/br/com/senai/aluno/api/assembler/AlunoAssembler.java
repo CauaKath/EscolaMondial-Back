@@ -10,6 +10,11 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/***
+ * Classe responsável por converter os dados das DTO para
+ * entidade e vice-versa, da entidade Aluno
+ */
+
 @AllArgsConstructor
 @Component
 public class AlunoAssembler {

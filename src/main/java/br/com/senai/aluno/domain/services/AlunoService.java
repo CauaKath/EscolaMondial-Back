@@ -9,6 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/***
+ * Classe responsável por realizar o CRUD
+ * relacionado ao Aluno
+ */
+
 @AllArgsConstructor
 @Service
 public class AlunoService {

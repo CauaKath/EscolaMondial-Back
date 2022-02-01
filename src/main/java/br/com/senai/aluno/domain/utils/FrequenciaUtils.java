@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * Classe responsável por realizar os métodos de
+ * regras de negócio das frequencias
+ */
+
 @AllArgsConstructor
 @Service
 public class FrequenciaUtils {

@@ -5,6 +5,10 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+/***
+ * Entidade Frequencia relacionada a tabela frequencias
+ */
+
 @Getter
 @Setter
 @Entity

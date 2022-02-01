@@ -7,6 +7,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+/***
+ * Repositório da tabela de frequencias
+ */
+
 @Repository
 public interface FrequenciaRepository extends JpaRepository<Frequencia, Long> {
 

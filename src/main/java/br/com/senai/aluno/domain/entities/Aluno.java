@@ -6,6 +6,10 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.LocalDate;
 
+/***
+ * Entidade Aluno relacionada a tabela alunos do BD
+ */
+
 @Getter
 @Setter
 @Entity

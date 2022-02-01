@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 
+/***
+ * Classe responsável por realizar os métodos de
+ * regras de negócio dos alunos
+ */
+
 @AllArgsConstructor
 @Service
 public class AlunoUtils {

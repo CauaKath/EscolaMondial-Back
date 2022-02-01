@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/***
+ * Classe responsável pelas rotas relacionadas a
+ * entidade Frequencia
+ */
+
 @AllArgsConstructor
 @RestController
 @RequestMapping("/chamadas")

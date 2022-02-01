@@ -6,6 +6,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+/***
+ * Repositório da tabela de alunos
+ */
+
 @Repository
 public interface AlunoRepository extends JpaRepository<Aluno, Long> {
 

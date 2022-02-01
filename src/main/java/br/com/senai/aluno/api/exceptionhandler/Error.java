@@ -8,6 +8,10 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/***
+ * Entidade para retornar os erros
+ */
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Getter
 @Setter

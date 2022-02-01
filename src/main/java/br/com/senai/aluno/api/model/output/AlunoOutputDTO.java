@@ -5,6 +5,10 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
+/***
+ * DTO para output de dados do Aluno
+ */
+
 @Getter
 @Setter
 public class AlunoOutputDTO {
