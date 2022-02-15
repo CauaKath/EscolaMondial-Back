@@ -57,8 +57,10 @@ public class AlunoUtils {
             throw new ExceptionTratement("Aluno não existe");
         }
 
-        if (alunoService.buscarPorNome(alunoInputDTO.getNome()).isPresent()) {
-            throw new ExceptionTratement("Nome já cadastrado");
+        if (!alunoInputDTO.getNome().equals(alunoService.buscar(alunoInputDTO.getMatricula()).get().getNome())) {
+            if (alunoService.buscarPorNome(alunoInputDTO.getNome()).isPresent()) {
+                throw new ExceptionTratement("Nome já cadastrado");
+            }
         }
 
         if (alunoInputDTO.getNascimento().getYear() > LocalDate.now().minusYears(5).getYear()) {
